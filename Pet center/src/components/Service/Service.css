@@ -1,0 +1,84 @@
+.front6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .front6doctors {  
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    
+  }
+  
+  .social {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social1 {
+    background-color: #daac00;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social1 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .front6title{
+    font-size: 50px;
+    font-weight: 700 ;
+  }
+  .front6text{
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front6img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+        
+  }
+
+  .front6imgname{
+  font-size: 170.5%; 
+  font-weight: 600 ;
+  }
+
+  .front6field{
+    font-size: 126.25%;
+    font-weight: 400 ;
+  }
+
+  .social1:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px  grey;
+  }
+  .front6doc{
+    width:80% ;
+  }

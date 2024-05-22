@@ -1,0 +1,89 @@
+.front4 {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .shape2 {
+    width: 655px;
+    height: 380px;
+    z-index: 10;
+    background-image: url("../../assets/docear.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+  }
+  .vidbt {
+    position: absolute;
+    left:10.5rem;
+    width: 7%;
+  }
+  
+  .front2box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .front4right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+    max-width: 100%;
+    gap: 10px;
+  }
+  
+  .front4head {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .front4text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .ourservice {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 25%;
+    padding: 2.5%;
+    background-color: #fcc302;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ourservice:hover {
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  

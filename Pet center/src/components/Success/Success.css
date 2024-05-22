@@ -1,0 +1,37 @@
+.front7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    width: 100%;
+    
+  }
+
+  .front7inner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  
+}
+
+.front7count{
+font-size: 100.5%; font-weight: 500; color: white
+}
+
+.front7target{
+font-size: 85.5%; font-weight: 700; color: white
+}
+
+.front7icon{
+  width: 30%;
+}

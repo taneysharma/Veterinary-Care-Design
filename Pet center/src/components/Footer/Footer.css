@@ -1,0 +1,94 @@
+.front9 {
+    display: flex;
+    background-color:#303030;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 3%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  
+  .front9text {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 2%;
+    width: 75%;
+    color: white;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .front9A{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+  .front9heads{
+    font-size: 100.5%; 
+    font-weight: 600 ;
+  }
+
+  .front9B{
+    display: flex; 
+    flex-direction: column;
+    gap: 10px
+  }
+  .front9child{
+    font-size: 60.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .front9C{
+    display: flex;
+    flex-direction: column
+  }
+  .front9Ctext{
+    font-size: 60.25%; 
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .social2{
+    display: flex;
+    gap: 5%; 
+    justify-content: space-between;
+    width:35%;
+    margin-left: auto;
+  }
+
+  .ani{
+    border-radius: 50%;
+  }
+  .ani:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 12px white;
+  }
+  .msg{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+  
+  }
+  .msg img {
+    width: 24px; 
+    height: 24px; 
+  }
+  .tel {
+    margin: auto;
+    display: flex;
+    cursor: pointer
+  
+  }
+  

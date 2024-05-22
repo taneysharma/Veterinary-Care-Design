@@ -1,0 +1,2933 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+}
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  /* background: #ced8ff; */
+}
+.front1{
+  max-width: 100vw;
+}
+
+
+
+@media   (max-width:576px){
+  html{
+    overflow-x: hidden;
+  }
+  .search-box{
+    display: none;
+  }
+  body{
+  
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    position: relative;
+    scroll-behavior: smooth;
+  }
+/* ALL NAV RELATED CSS */
+  .close{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    padding: 2%;
+  }
+
+  .open{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    
+  }
+  .nav {
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+    display: none;
+  }
+  .phonenav{
+    display: flex;flex-direction: column; height: 80vh; background-color: #e1ad00;align-items: center;justify-content: space-around;font-size: large;width: 70%;position: absolute;top:0%;right:-100%;
+  }
+  .nav1{
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+  
+  }
+  .navimg{
+    width:20%
+  }
+  .input {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 5%;
+    width: 70%;
+    color: white;
+    font-size:small;
+    font-family: "Poppins", sans-serif;
+  }
+  .input::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+  
+  .menu {
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1%;
+    display: hidden;
+  }
+  .menu:hover {
+    background-color: #f1c400;
+    transition: all 0.5s ease-in;
+  }
+  .search{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+    box-shadow: 10px 5px 10px gray;
+  
+}
+
+.nav2 {
+    
+  background-color: transparent;
+  background: linear-gradient(to bottom, transparent 20%, #f1c400 20%);
+
+  position: fixed; 
+  visibility: hidden;
+
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 25%;
+  gap:7%;
+  text-align: right;
+  align-items:center;
+  bottom: -70%;
+  
+  right: 0;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color:white;
+  transition:bottom 0.7s ease-out;
+  z-index: 98;
+  padding: 2%;
+}
+
+
+.nav2logo:hover {
+  background-color: #c9e8f0;
+  transition: background-color 0.4s; 
+}
+
+.nav2:hover {
+    bottom: 0;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+  }
+
+  a:visited{
+    text-decoration: none;
+    color: white;
+  }
+  a:link{
+    text-decoration: none;
+    color: white;
+  }
+
+
+/* ALL NAV RELATED CSS ENDS HERE*/
+
+
+/* HOME CSS */
+  
+  .front1 {
+    display: flex;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+    
+  }
+  .front1text1{
+    font-size: 180.75%; font-weight: bold; color: white;
+  
+}
+.front1text2{
+  font-size: 100.25%; color: white;
+}
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact {
+    border: none;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .contact:hover{
+    background: linear-gradient(to right, #00bfed 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid #ffffff;
+  }
+  .service {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .service:hover{
+    
+    
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+
+  /* HOME CSS ENDS HERE */
+
+
+  /* INTRODUCTION CSS */
+  
+  .front2 {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: center;
+    align-items:center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 10%;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+  }
+
+  .front2text1{
+    font-size: 200.5%; font-weight: 600
+  }
+
+
+  .front2text2{
+    font-size: 121.25%; font-weight: 400
+  }
+  
+  .shape1 {
+    width: 286px;
+    height: 260px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/people.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    display: none;
+  }
+  .people {
+    z-index: 0;
+    opacity: 0.6;
+    position: absolute;
+    width: 286px;
+    height: 260px;
+    background-color: #daac00;
+    display: none;
+  }
+  .play {
+    position: relative;
+  }
+  .playbutton {
+    position: absolute;
+  }
+  
+  .ourservice {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 45%;
+    padding: 5%;
+    background-color: #fcc302;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ourservice:hover{
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  .front2box{
+    position: absolute; top: 37%; left: -7%;width:80%
+  }
+
+  /* INNTRODUCTION CSS ENDS HERE */
+
+  /* ABOUT SECTION CSS */
+
+  
+  .front3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw; 
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap:20px;
+    flex-direction: column;
+    
+  }
+
+  .front3title{
+    font-size: 250.75%; font-weight: 700; color: white
+  }
+
+  .front3text1{
+        font-size: 100.25%;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        
+      
+  }
+
+  .front3img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+        
+  }
+
+  .front3imghead{
+    font-size: 180.5%; font-weight: 600; color: white
+  }
+  .front3imgtext{
+    font-size: 110.25%; font-weight: 400; color: white
+  }
+
+  .front3doc{
+    width: 70%;
+  }
+
+  /* ABOUT SECTION CSS ENDS HERE */
+
+
+  /* ADVERTISMENT CSS */
+  
+  .front4 {
+    display: flex;
+  
+    background-color: white;
+    max-width: 100vw;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  .shape2 {
+    width: 286px;
+    height: 260px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/docear.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+  }
+  .front4right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    max-width: 100%;
+    gap: 10px;
+  }
+  .front4head{
+    font-size: 200.5%; font-weight: 600
+  }
+
+  .front4text{
+    font-size: 121.25%; font-weight: 400
+  }
+
+  /* ADVERTISMENT CSS ENDS HERE */
+
+  /* DOGS CSS*/
+  
+  .front5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .dog {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    color: white;
+  
+  }
+  
+  .buy {
+    border: none;
+    outline: none;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: 80.25%;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .front5head{
+    font-size: 280.75%; font-weight: 700;color:white
+  }
+  .front5text{
+   
+    font-size: 100.25%;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front5rates{
+    
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          
+  
+  }
+
+  .strike{
+   font-size: 120.5%; font-weight: 600
+  }
+  .front5rate{
+    font-size: 120.5%; font-weight: 600
+  }
+
+  .front5img{
+    width: 100%;
+  }
+  
+/* DOGS CSS ENDS HERE */
+
+/* SERVICE CSS */
+  
+  .front6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .front6doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  .social {
+    width: 184px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social1 {
+    background-color: #daac00;
+    border-radius: 50%;
+  }
+
+  .front6title{
+    font-size: 230.75%; font-weight: 700
+  }
+  .front6text{
+  
+    font-size: 100.25%;
+    font-weight: 400;
+
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front6img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+        
+  }
+
+  .front6imgname{
+  font-size: 170.5%; font-weight: 600
+  }
+
+  .front6field{
+    font-size: 126.25%; font-weight: 400
+  }
+
+  .social1:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px  grey;
+  }
+  .front6doc{
+    width:80%
+  }
+
+  /* SERVICE CSS ENDS HERE */
+
+  /* SUCCESS CSS */
+  .front7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    width: 100%;
+    
+    
+  }
+
+  .front7inner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  
+}
+
+.front7count{
+font-size: 100.5%; font-weight: 500; color: white
+}
+
+.front7target{
+font-size: 85.5%; font-weight: 700; color: white
+}
+
+.front7icon{
+  width: 30%;
+}
+
+/* SUCCESS CSS ENDS HERE */
+
+
+/* POSTS CSS */
+
+  
+  .front8 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+  }
+  
+  .doctors1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .front8head{
+    font-size: 300.75%; font-weight: 700
+  }
+
+  .front8text{
+    
+        font-size: 100.25%;
+        max-width: 70%;
+        text-align: center;
+        font-weight: 400;
+      
+  }
+
+  .front8img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          box-shadow: 5px 5px 10px grey;
+          border-radius: 10px;
+          padding: 1%;
+        
+  }
+
+  .front8imghead{
+    font-size: 120.25%; font-weight: 600
+  }
+
+  .front8dates{
+    font-size: 106.25%; font-weight: 400; color: #00bec9
+  }
+
+  .front8imgtext{
+    font-size: 95.25%; font-weight: 400
+  }
+
+  .readmore{
+    font-size: 120.25%; font-weight: 500; color: #00bec9
+  }
+  .front8imgdoc{
+    width: 100%;
+  }
+  
+
+  /* POSTS CSS ENDS HERE */
+
+
+  /* CONTACT/FOOTTER CSS */
+  
+  
+  
+  .front9 {
+    display: flex;
+    background-color:#303030;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 3%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  
+  .front9text {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 3%;
+    width: 70%;
+    color: white;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .front9A{
+    display: flex; flex-direction: column; gap: 10px
+  }
+
+  .msg{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+  
+  }
+  .front9heads{
+    font-size: 100.5%; font-weight: 600
+  }
+
+  .front9B{
+    display: flex; flex-direction: column; gap: 10px
+  }
+  .front9child{
+    font-size: 60.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .front9C{
+    display: flex; flex-direction: column
+  }
+  .front9Ctext{
+    font-size: 60.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .social2{
+    display: flex; gap: 3%; justify-content: flex-end;
+  }
+
+  .ani{
+    border-radius: 50%;
+  }
+  .ani:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 12px white;
+    
+  }
+
+  /* CONTACT/FOOTTER CSS ENDS HERE*/
+  
+}
+@media (min-width:576px) and (max-width:768.9px){
+  html{
+    overflow-x: hidden;
+  }
+  body{
+  
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+
+  .phonenav{
+    display: flex;flex-direction: column; height: 80vh; background-color: #e1ad00;align-items: center;justify-content: space-around;font-size: large;width: 70%;position: absolute;top:0%;right:-100%;display: none;
+  }
+  .nav1{
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+    display: none;
+
+  
+  }
+  .nav {
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:xx-small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+  }
+  .navimg{
+    width:15%
+  }
+  .input {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 5%;
+    width: 70%;
+    color: white;
+    font-size:small;
+    font-family: "Poppins", sans-serif;
+  }
+  .input::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+  
+  .menu {
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1%;
+  }
+  .menu:hover {
+    background-color: #f1c400;
+    transition: all 0.5s ease-in;
+  }
+  
+  .front1 {
+    display: flex;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+    
+  }
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact {
+    border: none;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .contact:hover{
+    background: linear-gradient(to right, #00bfed 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid #ffffff;
+  }
+  .service {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .service:hover{
+    
+    
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front2 {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: center;
+    align-items:center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    
+  }
+  
+  .shape1 {
+    width: 386px;
+    height: 360px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/people.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .people {
+    z-index: 0;
+    opacity: 0.6;
+    position: absolute;
+    width: 386px;
+    height: 360px;
+    background-color: #daac00;
+    display: none;
+  }
+  .play {
+    position: relative;
+  }
+  .playbutton {
+    position: absolute;
+  }
+  
+  .ourservice {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 45%;
+    padding: 5%;
+    background-color: #fcc302;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ourservice:hover{
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap:20px;
+    flex-direction: column;
+    
+  }
+  
+  .front4 {
+    display: flex;
+  
+    background-color: white;
+    max-width: 100vw;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  
+  .shape2 {
+    width: 386px;
+    height: 360px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/docear.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .front4right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    max-width: 100%;
+    gap: 10px;
+  }
+  
+  .front5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .dog {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    color: white;
+  
+  }
+  
+  .buy {
+    border: none;
+    outline: none;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: 100.25%;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .front6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .front6doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  .social {
+    width: 184px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social1 {
+    background-color: #daac00;
+    border-radius: 50%;
+  }
+  .front7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .front8 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+    
+  }
+  
+  .doctors1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+  }
+  
+  
+  
+  .front9 {
+    display: flex;
+    background-color:#303030;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 3%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+  }
+  
+  .front9text {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 3%;
+    width: 70%;
+    color: white;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .nav2 {
+    
+    background-color: transparent;
+    background: linear-gradient(to bottom, transparent 20%, #f1c400 20%);
+  
+    position: fixed; 
+  
+  
+  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 20%;
+    gap:7%;
+    text-align: right;
+    align-items:center;
+    bottom: -70%;
+    
+    right: 0;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color:white;
+    transition:bottom 0.7s ease-out;
+    z-index: 98;
+    padding: 2%;
+  }
+  
+  
+  .nav2logo:hover {
+    background-color: #c9e8f0;
+    transition: background-color 0.4s; 
+  }
+  
+  .nav2:hover {
+      bottom: 0;
+      transition: all 0.5s ease-in;
+      cursor: pointer;
+    }
+  
+    a:visited{
+      text-decoration: none;
+      color: white;
+    }
+    a:link{
+      text-decoration: none;
+      color: white;
+    }
+  
+    .front1text1{
+      font-size: 230.75%; font-weight: bold; color: white;
+    
+  }
+  .front1text2{
+    font-size: 100.25%; color: white;
+  }
+
+  .front2text1{
+    font-size: 200.5%; font-weight: 600
+  }
+
+
+  .front2text2{
+    font-size: 121.25%; font-weight: 400
+  }
+
+  .front3title{
+    font-size: 330.75%; font-weight: 700; color: white
+  }
+
+  .front3text1{
+        font-size: 130.25%;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        
+      
+  }
+
+  .front3img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+        
+  }
+
+  .front3imghead{
+    font-size: 200.5%; font-weight: 600; color: white
+  }
+  .front3imgtext{
+    font-size: 140.25%; font-weight: 400; color: white
+  }
+
+  .front3doc{
+    width: 80%;
+  }
+  .front4head{
+    font-size: 200.5%; font-weight: 600
+  }
+
+  .front4text{
+    font-size: 121.25%; font-weight: 400
+  }
+
+  .front5head{
+    font-size: 320.75%; font-weight: 700;color:white
+  }
+  .front5text{
+   
+    font-size: 120.25%;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front5rates{
+    
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          
+  
+  }
+
+  .strike{
+   font-size: 140.5%; font-weight: 600
+  }
+  .front5rate{
+    font-size: 140.5%; font-weight: 600
+  }
+
+  .front6title{
+    font-size: 300.75%; font-weight: 700
+  }
+  .front6text{
+  
+    font-size: 130.25%;
+    font-weight: 400;
+
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front6img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+        
+  }
+
+  .front6imgname{
+  font-size: 230.5%; font-weight: 600
+  }
+
+  .front6field{
+    font-size: 136.25%; font-weight: 400
+  }
+
+  .social1:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px  grey;
+  }
+
+  .front7inner{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+          
+  }
+
+  .front7count{
+    font-size: 120.5%; font-weight: 500; color: white
+  }
+
+  .front7target{
+    font-size: 100.5%; font-weight: 700; color: white
+  }
+
+  .front8head{
+    font-size: 340.75%; font-weight: 700
+  }
+
+  .front8text{
+    
+        font-size: 130.25%;
+        max-width: 70%;
+        text-align: center;
+        font-weight: 400;
+      
+  }
+
+  .front8img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          box-shadow: 5px 5px 10px grey;
+          border-radius: 10px;
+          padding: 1%;
+        
+  }
+
+  .front8imghead{
+    font-size: 140.25%; font-weight: 600
+  }
+
+  .front8dates{
+    font-size: 106.25%; font-weight: 400; color: #00bec9
+  }
+
+  .front8imgtext{
+    font-size: 95.25%; font-weight: 400
+  }
+
+  .readmore{
+    font-size: 120.25%; font-weight: 500; color: #00bec9
+  }
+
+
+  .front9A{
+    display: flex; flex-direction: column; gap: 10px
+  }
+
+  .msg{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+  
+  }
+  .front9heads{
+    font-size: 150.5%; font-weight: 600
+  }
+
+  .front9B{
+    display: flex; flex-direction: column; gap: 10px
+  }
+  .front9child{
+    font-size: 80.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .front9C{
+    display: flex; flex-direction: column
+  }
+  .front9Ctext{
+    font-size: 80.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .social2{
+    display: flex; gap: 3%; justify-content: flex-end;
+  }
+
+  .ani{
+    border-radius: 50%;
+  }
+  .ani:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 12px white;
+    
+  }
+
+  .front5img{
+    width: 100%;
+  }
+  .front6doc{
+    width:100%
+  }
+  .front8imgdoc{
+    width: 100%;
+  }
+
+  .front2box{
+    position: absolute; top: 48%; left: -5%
+  }
+  .search-box{
+    display: none;
+  }
+  .search{
+  
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #00bfed;
+          cursor: pointer;
+          box-shadow: 10px 5px 10px gray;
+        
+  }
+}
+
+@media (min-width:768px) and (max-width:991.9px){
+
+  html{
+    overflow-x: hidden;
+  }
+
+  .phonenav{
+    display: flex;flex-direction: column; height: 80vh; background-color: #e1ad00;align-items: center;justify-content: space-around;font-size: large;width: 70%;position: absolute;top:0%;right:-100%;display: none;
+  }
+  .nav1{
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+    display: none;
+  
+  }
+
+  body{
+  
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  .nav {
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+  }
+  .navimg{
+    width:20%
+  }
+  .input {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 5%;
+    width: 70%;
+    color: white;
+    font-size:small;
+    font-family: "Poppins", sans-serif;
+  }
+  .input::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+  
+  .menu {
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1%;
+  }
+  .menu:hover {
+    background-color: #f1c400;
+    transition: all 0.5s ease-in;
+  }
+  
+  .front1 {
+    display: flex;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 2%;
+    padding: 5%;
+    box-sizing: border-box;
+    
+    
+  }
+  .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact {
+    border: none;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .contact:hover{
+    background: linear-gradient(to right, #00bfed 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid #ffffff;
+  }
+  .service {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 40%;
+    padding: 4%;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .service:hover{
+    
+    
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front2 {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    
+  }
+  
+  .shape1 {
+    width: 406px;
+    height: 380px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/people.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .people {
+    z-index: 0;
+    opacity: 0.6;
+    position: absolute;
+    width: 406px;
+    height: 380px;
+    background-color: #daac00;
+  }
+  .play {
+    position: relative;
+  }
+  .playbutton {
+    position: absolute;
+  }
+  
+  .ourservice {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 45%;
+    padding: 5%;
+    background-color: #fcc302;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ourservice:hover{
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap:3%
+    
+  }
+  
+  .front4 {
+    display: flex;
+  
+    background-color: white;
+    max-width: 100vw;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 2%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .shape2 {
+    width: 406px;
+    height: 380px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/docear.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .front4right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    max-width: 50%;
+    gap: 10px;
+  }
+  
+  .front5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .dog {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 3%;
+    color: white;
+  }
+  
+  .buy {
+    border: none;
+    outline: none;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: 120.25%;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .front6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .front6doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .social {
+    width: 184px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social1 {
+    background-color: #daac00;
+    border-radius: 50%;
+  }
+  .front7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+  
+    width: 100%;
+  }
+  
+  .front8 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .doctors1{
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+  
+  
+  
+  .front9 {
+    display: flex;
+    background-color:#303030;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 3%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+  }
+  
+  .front9text {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 3%;
+    width: 70%;
+    color: white;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .nav2 {
+    
+    background-color: transparent;
+    background: linear-gradient(to bottom, transparent 20%, #f1c400 20%);
+  
+    position: fixed;   
+  
+  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 15%;
+    gap:7%;
+    text-align: right;
+    align-items:center;
+    bottom: -70%;
+    
+    right: 0;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color:white;
+    transition:bottom 0.7s ease-out;
+    z-index: 98;
+    padding: 2%;
+  }
+  
+  
+  .nav2logo:hover {
+    background-color: #c9e8f0;
+    transition: background-color 0.4s; 
+  }
+  
+  .nav2:hover {
+      bottom: 0;
+      transition: all 0.5s ease-in;
+      cursor: pointer;
+    }
+  
+    a:visited{
+      text-decoration: none;
+      color: white;
+    }
+    a:link{
+      text-decoration: none;
+      color: white;
+    }
+  
+    .front1text1{
+      font-size: 230.75%; font-weight: bold; color: white;
+    
+  }
+  .front1text2{
+    font-size: 100.25%; color: white;
+  }
+
+  .front2text1{
+    font-size: 200.5%; font-weight: 600
+  }
+
+
+  .front2text2{
+    font-size: 121.25%; font-weight: 400
+  }
+
+  .front3title{
+    font-size: 350.75%; font-weight: 700; color: white
+  }
+
+  .front3text1{
+        font-size: 150.25%;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        max-width: 70%;
+      
+  }
+
+  .front3img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+        
+  }
+
+  .front3imghead{
+    font-size: 128.5%; font-weight: 600; color: white
+  }
+  .front3imgtext{
+    font-size: 100.25%; font-weight: 400; color: white
+  }
+
+  .front3doc{
+    width: 100%;
+  }
+  .front4head{
+    font-size: 200.5%; font-weight: 600
+  }
+
+  .front4text{
+    font-size: 121.25%; font-weight: 400
+  }
+
+  .front5head{
+    font-size: 400.75%; font-weight: 700;color:white
+  }
+  .front5text{
+   
+    font-size: 170.25%;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front5rates{
+    
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          
+  
+  }
+
+  .strike{
+   font-size: 180.5%; font-weight: 600
+  }
+  .front5rate{
+    font-size: 180.5%; font-weight: 600
+  }
+
+  .front6title{
+    font-size: 370.75%; font-weight: 700
+  }
+  .front6text{
+  
+    font-size: 150.25%;
+    font-weight: 400;
+
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front6img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+        
+  }
+
+  .front6imgname{
+  font-size: 230.5%; font-weight: 600
+  }
+
+  .front6field{
+    font-size: 136.25%; font-weight: 400
+  }
+
+  .social1:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px  grey;
+  }
+
+
+  .front7inner{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+          
+  }
+
+  .front7count{
+    font-size: 170.5%; font-weight: 500; color: white
+  }
+
+  .front7target{
+    font-size: 130.5%; font-weight: 700; color: white
+  }
+
+  .front8head{
+    font-size: 400.75%; font-weight: 700
+  }
+
+  .front8text{
+    
+        font-size: 170.25%;
+        max-width: 70%;
+        text-align: center;
+        font-weight: 400;
+      
+  }
+
+  .front8img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          box-shadow: 5px 5px 10px grey;
+          border-radius: 10px;
+          padding: 1%;
+        
+  }
+
+  .front8imghead{
+    font-size: 140.25%; font-weight: 600
+  }
+
+  .front8dates{
+    font-size: 106.25%; font-weight: 400; color: #00bec9
+  }
+
+  .front8imgtext{
+    font-size: 95.25%; font-weight: 400
+  }
+
+  .readmore{
+    font-size: 120.25%; font-weight: 500; color: #00bec9
+  }
+
+
+  .front9A{
+    display: flex; flex-direction: column; gap: 10px
+  }
+
+  .msg{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+  
+  }
+  .front9heads{
+    font-size: 180.5%; font-weight: 600
+  }
+
+  .front9B{
+    display: flex; flex-direction: column; gap: 10px
+  }
+  .front9child{
+    font-size: 100.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .front9C{
+    display: flex; flex-direction: column
+  }
+  .front9Ctext{
+    font-size: 100.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .social2{
+    display: flex; gap: 3%; justify-content: flex-end
+  }
+
+  .ani{
+    border-radius: 50%;
+  }
+  .ani:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 12px white;
+    
+  }
+
+  .front5img{
+    width: 100%;
+  }
+  .front6doc{
+    width:100%
+  }
+  .front8imgdoc{
+    width: 100%;
+  }
+
+  .front2box{
+    position: absolute; top: 53%; left: -6%
+  }
+
+  .search{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+    box-shadow: 10px 5px 10px gray;
+  
+}
+}
+@media (min-width:992px) and (max-width:1200px){
+
+  html{
+    overflow-x: hidden;
+  }
+  .search-box{
+    display: none;
+  }
+
+  .phonenav{
+    display: flex;flex-direction: column; height: 80vh; background-color: #e1ad00;align-items: center;justify-content: space-around;font-size: large;width: 70%;position: absolute;top:0%;right:-100%;display:none
+  }
+  .nav1{
+    background-color:  #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:small;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+    display:none
+  
+  }
+
+  body{
+  
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  .nav {
+    background-color: #e1ad00;
+    display: flex;
+    justify-content: space-around;
+    font-size:medium;
+    padding: 1%;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100vw;
+  }
+  .navimg{
+    width:20%
+  }
+  .input {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 5%;
+    width: 70%;
+    color: white;
+    font-size:small;
+    font-family: "Poppins", sans-serif;
+  }
+  .input::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+  
+  .menu {
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1%;
+  }
+  .menu:hover {
+    background-color: #f1c400;
+    transition: all 0.5s ease-in;
+  }
+  
+  .front1 {
+    display: flex;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 2%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact {
+    border: none;
+    outline: none;
+    width: 30%;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .contact:hover{
+    background: linear-gradient(to right, #00bfed 50%, transparent 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid #ffffff;
+  }
+  .service {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 30%;
+    padding: 4%;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .service:hover{
+    
+    
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front2 {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 5%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .shape1 {
+    width: 506px;
+    height: 480px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/people.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .people {
+    z-index: 0;
+    opacity: 0.6;
+    position: absolute;
+    width: 506px;
+    height: 480px;
+    background-color: #daac00;
+  }
+  .play {
+    position: relative;
+  }
+  .playbutton {
+    position: absolute;
+  }
+  
+  .ourservice {
+    border: 3px solid #ffffff;
+    outline: none;
+    width: 40%;
+    padding: 5%;
+    background-color: #fcc302;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ourservice:hover{
+    background: linear-gradient(to right, transparent 50%, #00bfed 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
+  }
+  
+  .front3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap:5%
+    
+  }
+  
+  .front4 {
+    display: flex;
+  
+    background-color: white;
+    max-width: 100vw;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 2%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .shape2 {
+    width: 506px;
+    height: 480px;
+    background-color: rgba(218, 172, 0, 0.5686274509803921);
+    z-index: 10;
+    background-image: url("assets/docear.svg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .front4right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    max-width: 50%;
+    gap: 10px;
+  }
+  
+  .front5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1c400;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .dog {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 3%;
+    color: white;
+  }
+  
+  .buy {
+    border: none;
+    outline: none;
+    padding: 4%;
+    background-color: #00bfed;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+    font-size: 120.25%;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .front6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .front6doctors {
+    display: flex;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .social {
+    width: 184px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social1 {
+    background-color: #daac00;
+    border-radius: 50%;
+  }
+  .front7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15%;
+  
+    width: 100%;
+  }
+  
+  .front8 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 30px;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .doctors1{
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+  
+  
+  
+  .front9 {
+    display: flex;
+    background-color:#303030;
+    max-width: 100vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    gap: 3%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+  }
+  
+  .front9text {
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 3%;
+    width: 70%;
+    color: white;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .nav2 {
+    
+    background-color: transparent;
+    background: linear-gradient(to bottom, transparent 20%, #f1c400 20%);
+  
+    position: fixed;   
+  
+  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 15%;
+    gap:7%;
+    text-align: right;
+    align-items:center;
+    bottom: -70%;
+    
+    right: 0;
+    font-size: large;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    color:white;
+    transition:bottom 0.7s ease-out;
+    z-index: 98;
+    padding: 2%;
+  }
+  
+  
+  .nav2logo:hover {
+    background-color: #c9e8f0;
+    transition: background-color 0.4s; 
+  }
+  
+  .nav2:hover {
+      bottom: 0;
+      transition: all 0.5s ease-in;
+      cursor: pointer;
+    }
+  
+    a:visited{
+      text-decoration: none;
+      color: white;
+    }
+    a:link{
+      text-decoration: none;
+      color: white;
+    }
+  
+    .front1text1{
+      font-size: 290.75%; font-weight: bold; color: white;
+    
+  }
+  .front1text2{
+    font-size: 130.25%; color: white;
+  }
+
+  .front2text1{
+    font-size: 212.5%; font-weight: 600
+  }
+
+
+  .front2text2{
+    font-size: 131.25%; font-weight: 400
+  }
+
+  .front3title{
+    font-size: 400.75%; font-weight: 700; color: white
+  }
+
+  .front3text1{
+        font-size: 170.25%;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        max-width: 70%;
+      
+  }
+
+  .front3img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+        
+  }
+
+  .front3imghead{
+    font-size: 140.5%; font-weight: 600; color: white
+  }
+  .front3imgtext{
+    font-size: 120.25%; font-weight: 400; color: white
+  }
+
+  .front3doc{
+    width: 100%;
+  }
+  .front4head{
+    font-size: 212.5%; font-weight: 600
+  }
+
+  .front4text{
+    font-size: 131.25%; font-weight: 400
+  }
+
+  .front5head{
+    font-size: 400.75%; font-weight: 700;color:white
+  }
+  .front5text{
+   
+    font-size: 170.25%;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front5rates{
+    
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          
+  
+  }
+
+  .strike{
+   font-size: 200.5%; font-weight: 600
+  }
+  .front5rate{
+    font-size: 200.5%; font-weight: 600
+  }
+
+  .front6title{
+    font-size: 400.75%; font-weight: 700
+  }
+  .front6text{
+  
+    font-size: 170.25%;
+    font-weight: 400;
+
+    text-align: center;
+    max-width: 70%;
+  
+  }
+
+  .front6img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+        
+  }
+
+  .front6imgname{
+  font-size: 237.5%; font-weight: 600
+  }
+
+  .front6field{
+    font-size: 156.25%; font-weight: 400
+  }
+
+  .social1:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px  grey;
+  }
+
+
+  .front7inner{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+          
+  }
+
+  .front7count{
+    font-size: 200.5%; font-weight: 500; color: white
+  }
+
+  .front7target{
+    font-size: 190.5%; font-weight: 700; color: white
+  }
+
+  .front8head{
+    font-size: 400.75%; font-weight: 700
+  }
+
+  .front8text{
+    
+        font-size: 170.25%;
+        max-width: 70%;
+        text-align: center;
+        font-weight: 400;
+      
+  }
+
+  .front8img{
+    
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          box-shadow: 5px 5px 10px grey;
+          border-radius: 10px;
+          padding: 1%;
+        
+  }
+
+  .front8imghead{
+    font-size: 140.25%; font-weight: 600
+  }
+
+  .front8dates{
+    font-size: 106.25%; font-weight: 400; color: #00bec9
+  }
+
+  .front8imgtext{
+    font-size: 100.25%; font-weight: 400
+  }
+
+  .readmore{
+    font-size: 120.25%; font-weight: 500; color: #00bec9
+  }
+
+
+  .front9A{
+    display: flex; flex-direction: column; gap: 10px
+  }
+
+  .msg{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+  
+  }
+  .front9heads{
+    font-size: 200.5%; font-weight: 600
+  }
+
+  .front9B{
+    display: flex; flex-direction: column; gap: 10px
+  }
+  .front9child{
+    font-size: 120.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .front9C{
+    display: flex; flex-direction: column
+  }
+  .front9Ctext{
+    font-size: 120.25%; font-weight: 400;
+    cursor: pointer;
+  }
+
+  .social2{
+    display: flex; gap: 3%; justify-content: flex-end
+  }
+
+  .ani{
+    border-radius: 50%;
+  }
+  .ani:hover{
+    transform: scale(1.35);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 12px white;
+    
+  }
+
+  .front5img{
+    width: 100%;
+  }
+  .front6doc{
+    width:100%
+  }
+  .front8imgdoc{
+    width: 100%;
+  }
+
+  .front2box{
+    position: absolute; top: 63%; left: -5%
+  }
+
+  .search{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bfed;
+    cursor: pointer;
+    box-shadow: 10px 5px 10px gray;
+  
+}
+}

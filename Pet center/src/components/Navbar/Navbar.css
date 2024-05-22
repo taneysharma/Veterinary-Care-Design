@@ -1,0 +1,64 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #e1ad00;
+    padding: 15px 80px ;
+    font-weight: bold ;
+}
+.logo{
+    width:15% ;
+}
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul>li{
+    display: inline-block;
+}
+.menu {
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 1%;
+    display: hidden;
+    font-size: medium;
+    
+}
+.menu:hover {
+    background-color: #f1c400;
+    transition: all 0.5s ease-in;
+}
+.search-box>input{
+    background-color: #f1c400;
+    outline: none;
+    border: none;
+    padding: 5%;
+    margin-left: -5px;
+    color: white;
+    font-size:small;
+    font-family: "Poppins", sans-serif;
+}
+.input::placeholder {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+.search-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00bfed;
+    width: 19.5%;
+    cursor: pointer;
+    box-shadow: 10px 5px 10px gray;
+}
+.search-box img{
+    width: 18px;
+}
+
+
